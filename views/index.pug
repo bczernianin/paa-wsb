@@ -3,7 +3,11 @@ extends layout
 block content
   form(action="/tasks/add", method="post")
     label(for="title")
-      | Shit
+      | Tytuł
+    br
+    input(type="text" id="title" name="title")
+    br
+    input(type="submit", value="Dodaj")
     br
     input(type="text" id="title" name="title")
     br
