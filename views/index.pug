@@ -1,4 +1,4 @@
-extends layout
+1extends layout
 
 block content
   form(action="/tasks/add", method="post")
@@ -12,3 +12,9 @@ block content
     input(type="text" id="title" name="title")
     br
     input(type="submit", value="Wcisnij")
+table
+    tr
+      th(scope= "col") Tytuł
+    each task in tasks
+      tr
+        td= task.title
